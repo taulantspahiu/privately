@@ -9,12 +9,13 @@ function getAppState(){
 }
 
 class App extends React.Component {
-    getInitialState() {
-        return getAppState()
+    constructor(props, context) {
+        super(props, context)
+        this.state = getAppState()
     }
 
     componentDidMount() {
-        AppStore.addChangeListerner(this._onChange)
+        AppStore.addChangeListener(this._onChange)
     }
 
     componentUnmount() {

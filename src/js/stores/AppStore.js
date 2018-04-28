@@ -9,13 +9,13 @@ var CHANGE_EVENT = 'change'
 var _items = []
 
 var AppStore = assign({}, EventEmitter.prototype, {
-	emitChange: function(){
+	emitChange() {
 		this.emit(CHANGE_EVENT)
 	},
-	addChangeListener: function(callback){
+	addChangeListener(callback) {
 		this.on('change', callback)
 	},
-	removeChangeListener: function(callback){
+	removeChangeListener(callback) {
 		this.removeListener('change', callback)
 	}
 })
@@ -25,7 +25,7 @@ AppDispatcher.register(function(payload){
 	switch(action.actionType){
 		
 	}
-	return true;
+	return true
 })
 
 module.exports = AppStore
