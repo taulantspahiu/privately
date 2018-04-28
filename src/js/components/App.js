@@ -1,6 +1,8 @@
 var React = require('react')
 var appActions = require('../actions/AppActions')
 var AppStore = require('../stores/AppStore')
+var SearchForm = require('./InputData.js')
+var SearchResults = require('./Results.js')
 
 function getAppState(){
     return {
@@ -25,7 +27,8 @@ class App extends React.Component {
     render() {
         return(
             <div>
-                Privately App
+                <SearchForm />
+                <SearchResults />
             </div>
         )
     }

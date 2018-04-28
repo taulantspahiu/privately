@@ -1,3 +1,7 @@
-.test-class {
-    color: blue
+.logo {
+    height: 100px
+}
+
+.logo > img, .logo > h2 {
+    display: inline;
 }
