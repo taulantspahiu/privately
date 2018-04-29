@@ -3,5 +3,9 @@
 }
 
 .logo > img, .logo > h2 {
-    display: inline;
+    display: inline
+}
+
+.title {
+    margin-top: 15px
 }
