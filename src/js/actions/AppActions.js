@@ -5,7 +5,7 @@ var AppActions = {
     searchText(text) {
         AppDispatcher.handleViewAction({
             actionType: AppConstants.SEARCH_TEXT,
-            search: search
+            search: text
         })
     }
 }

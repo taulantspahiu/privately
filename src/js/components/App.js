@@ -14,6 +14,7 @@ class App extends React.Component {
     constructor(props, context) {
         super(props, context)
         this.state = getAppState()
+        this._onChange = this._onChange.bind(this)
     }
 
     componentDidMount() {

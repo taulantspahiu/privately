@@ -1,8 +1,13 @@
 var React = require('react')
-var appActions = require('../actions/AppActions')
+var AppActions = require('../actions/AppActions')
 var AppStore = require('../stores/AppStore')
 
 class InputData extends React.Component {
+    constructor(props, context) {
+        super(props, context)
+        this.searchText = this.searchText.bind(this)
+    }
+
     render() {
         return(
             <div>
