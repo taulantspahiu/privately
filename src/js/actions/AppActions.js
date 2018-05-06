@@ -7,6 +7,12 @@ var AppActions = {
             actionType: AppConstants.SEARCH_TEXT,
             search: text
         })
+    },
+    getResults(results) {
+        AppDispatcher.handleViewAction({
+            actionType: AppConstants.GET_RESULTS,
+            results: results
+        })
     }
 }
 

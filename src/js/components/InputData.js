@@ -24,7 +24,6 @@ class InputData extends React.Component {
     
 
     searchText(e) {
-        console.log('this', this)
         e.preventDefault()
 
         var search = {
